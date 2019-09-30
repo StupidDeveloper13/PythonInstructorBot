@@ -2,6 +2,7 @@ from function import *
 from createkey import *
 from message import *
 from main import *
+import time
 
 
 def keyfunc(uid, text, vk, vk_session, event):
@@ -269,3 +270,4 @@ def keyfunc(uid, text, vk, vk_session, event):
             message = 'Ожидайте, скоро админ выйдет с вами на связь.',
             random_id = get_random_id()
         )
+        time.sleep(150)
