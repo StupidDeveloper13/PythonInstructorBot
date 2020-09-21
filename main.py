@@ -12,11 +12,11 @@ from message import *
 from function import *
 
 def main():
-    vk_session = vk_api.VkApi(token = '82e9afd96ab30ccae2c373267e03ded752ac0d84f6438bcaa89faed8fdfef26a82024af471c69579aca30')
+    vk_session = vk_api.VkApi(token = 'token')
     print('Bot started!')
 
     vk = vk_session.get_api()
-    group_id = 182258031
+    group_id = int(id)
 
     longpoll = VkBotLongPoll(vk_session, str(group_id))
     upload = vk_api.VkUpload(vk_session)
